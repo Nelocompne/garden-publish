@@ -1,0 +1,28 @@
+public:: true
+
+- ## 数字激活
+- 数字权力激活（微软官方叫法有**Digtal Entitlement**，**Digital License**），数字许可证是与硬件直接关联，并且可以链接到微软帐户中，新购买的正版windows电脑，登录微软账号，并联网，就完成了数字许可证的绑定。（在 **系统设置->激活** 页面，可以查看系统激活是否是属于数字许可证书）
+- 用过Windows 7可能都清楚，曾经有很长一段时间，可以免费升级到Windows 10，只要win7是激活的，那么升级到Windows 10就自动激活了（据说现在仍然有效，但本人没试过）
+- Windows 7/8/8.1升级到Windows 10时，简单来说，就是以下的过程：
+- 执行安装包中的gatherosstate.exe程序，该exe会生成一个包含当前硬件信息及其他信息的xml文件
+- 生成的xml文件将会被上传到微软的服务器并反馈一个json文件。
+- 这个激活过程是比较费时的，并不像点击“激活”按钮那种方式那么简单。
+- 国外一些大神发现了一种方式: 通过欺骗**gatherosstate.exe**，就可以快速的生成一个有效的xml文件。
+- ## KMS
+- 密钥管理服务（KMS）是微软为批量许可客户（组织，学校或政府）提供的一种正版激活方法。
+- 在KMS环境中，客户机（Windows系统）是通过向KMS服务器发送激活请求，由KMS服务器授权而非通过微软的服务器验证激活的。
+- 由于这些企业的特殊性，可能无法实现通过微软服务器验证的方式来激活Windows。因此，通过向微软购买KMS服务，并部署到组织的内部网络，即可实现激活。
+- **KMS激活期限最多可以长达180天（6个月），激活每7天自动进行更新（期限自动重置为180天），也就是说如果客户端可以一直连接到KMS主机服务器，那么是可以无限制的使用下去。**
+- **2. 在线KMS激活的原理？**
+- 大神通过对KMS服务器镜像逆向，开发了一个“破解版的KMS服务器”，普通用户都可以自己部署到电脑或者服务器上。
+- 网上比较流行的KMS激活软件（比如KMSpico，MTK，KMS_VL_ALL等）都是在本地搭建一个KMS主机服务器并实现本地激活Windows和Office。**这个方式容易被Windows系统报毒。**
+- KMS激活的另一种方法就是搭建在线KMS服务器。 通过这种方法，网站搭建一个KMS服务器，这样所用的用户，都可以简单地使用此服务器来激活其系统，无需在本地搭建，也就不必担心杀毒如报毒，**也同样不用担心下载到流氓KMS软件**。 并且此方法与真正的KMS激活完全一样。
+- ## KMS38
+- KMS38用于激活一些特殊的windows版本，比如Windows Server和Windows 10 LTSB/LTSC。
+- KMS38激活的原理其实是和数字权利激活方式差不多，就不过多介绍了，但是数字权利不支持激活Windows Server，如果要激活Windows Server那么就需要KMS38或者KMS方式
+- **（以前需要用到KMS38，是因为通过数字权利激活的方式是无法激活Windows 10 LTSB 2015/2016 & LTSC 2019 俗称的老坛酸菜版，但是目前这些版本是可以通过数字权利方式激活了。）**
+- ## 工具
+- [MASSGRAVE / Microsoft Activation Scripts · GitLab](https://gitlab.com/massgrave/microsoft-activation-scripts)
+- [massgravel/Microsoft-Activation-Scripts: A collection of scripts for activating Microsoft products using HWID / KMS38 / Online KMS activation methods with a focus on open-source code, less antivirus detection and user-friendliness. (github.com)](https://github.com/massgravel/Microsoft-Activation-Scripts)
+- [luzeadev/winactivate: Easy-to-use Windows HWID/KMS38 Activation Script. (github.com)](https://github.com/luzeadev/winactivate)
+- [GitHub - abbodi1406/KMS_VL_ALL_AIO: Smart Activation Script](https://github.com/abbodi1406/KMS_VL_ALL_AIO)
