@@ -1,5 +1,5 @@
 public:: true
-date:: "2023-04-08"
+date:: [[Apr 8th, 2023]]
 
 - [nitter](https://github.com/zedeus/nitter)，一个 #twitter 前端，致力于无追踪的 #twitter 体验服务
 	- 不仅如此，因为尽可能避免了 #twitter 响应的加载，它对于 #twitter 信息的加载非常迅速。

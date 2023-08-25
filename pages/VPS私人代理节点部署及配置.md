@@ -1,5 +1,5 @@
 public:: true
-date:: "2023-07-26"
+date:: [[Jul 16th, 2023]] 
 tags:: DevOps
 
 - ## 什么情况下你应该继续看这篇文章？

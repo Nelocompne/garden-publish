@@ -1,5 +1,5 @@
 public:: true
-date:: "2023-05-12"
+date::  [[May 12th, 2023]] 
 tags:: Game
 
 - ## 开始

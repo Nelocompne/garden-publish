@@ -1,5 +1,5 @@
 public:: true
-date:: "2022-06-21"
+date::  [[Jun 21st, 2022]]
 
 - 官网：[OpenMC](https://openmc.org/)，源码：[openmc-dev/openmc: OpenMC Monte Carlo Code (github.com)](https://github.com/openmc-dev/openmc)
 - 它是用[[Python]]写的，可以运行在windows/mac/linux平台上。有两种自选的安装方式：通过[[Conda]]安装，通过 [[Docker]] 安装。

@@ -1,5 +1,5 @@
 public:: true
-date:: "2022-01-19"
+date:: [[Jan 19th, 2022]] 
 tags:: DevOps
 
 - **例子**

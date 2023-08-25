@@ -1,5 +1,5 @@
 public:: true
-date:: "2023-04-28"
+date::  [[Apr 28th, 2023]]
 
 - 笔记本的电池寿命一直是个问题，尝试直接搜了一下，发现确实有些好工具：#Linux
 - {{video https://www.youtube.com/watch?v=B1iRxoyT4EA}}

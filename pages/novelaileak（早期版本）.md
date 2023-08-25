@@ -1,5 +1,5 @@
 public:: true
-date:: "2022-11-14"
+date:: [[Nov 14th, 2022]]
 
 - ```
   magnet:?xt=urn:btih:lppeilnimjs3m4fd4xvdcy5pvuwg7dwm&dn=novelaileak&xl=55901742348&fc=94

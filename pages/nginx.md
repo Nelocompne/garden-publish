@@ -1,5 +1,5 @@
 public:: true
-date:: "2023-07-16"
+date:: [[Jul 16th, 2023]] 
 tags:: DevOps
 
 - nginx都是大家熟知的角色了，当然在[[Docker]]上运行也非常简单。
