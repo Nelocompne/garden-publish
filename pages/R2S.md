@@ -1,7 +1,7 @@
 public:: true
 date::  [[Mar 28th, 2023]], [[Aug 28th, 2023]]
 
-- ## 固件选择（[[openwrt]]）
+- ## [[openwrt]] 固件
 	- https://github.com/soffchen/NanoPi-R2S 大杂烩，省事
 	- https://github.com/stupidloud/nanopi-openwrt  （原klever1988） _[[immortalwrt]]_ ~~挑卡~~屁用没有
 	- https://github.com/msylgj/R2S-R4S-OpenWrt _immortalwrt_ 小 ~~挑卡~~屁用没有 _sfs_
