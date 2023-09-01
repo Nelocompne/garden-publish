@@ -3,7 +3,7 @@ date:: [[Jul 16th, 2023]]
 tags:: DevOps
 
 - ## 什么情况下你应该继续看这篇文章？
-- 掌握 Docker 。
+- 掌握 [[Docker]] 。
 - 熟练掌握 Linux 、 建站 、服务器运维。
 - 尊重您所在的当地法律。
 - ## 从头开始配置
@@ -25,47 +25,10 @@ tags:: DevOps
 - 然后按以下步骤开始。
 - ## All on docker
 - 用docker的话还可以配合上这个[小工具](https://github.com/jesseduffield/lazydocker)
-- ### acme
-- acme https://github.com/acmesh-official/acme.sh/wiki/Run-acme.sh-in-docker#3-run-acmesh-as-a-docker-daemon
-- 进入容器内部 `docker exec -it acme.sh sh`
-- zerosll 注册 `acme.sh  --register-account  -m xxxxxx@xxxxxx.com --server zerossl`
-- cloudflare key api
-- ```shell
-  export CF_Key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-  export CF_Email="xxxxxx@xxxxxx.com"
-  ```
-- 通过DNS方式生成证书
-- ```shell
-  docker run --rm  -it  \
-  -v "$(pwd)/out":/acme.sh  \
-  --net=host \
-  neilpang/acme.sh  --issue -d exmple.domain.com  --dns dns_cf
-  ```
-- pem install
-- ```shell
-  mkdir -p /acme.sh/keyfile/in/nginx /acme.sh/fullchain/nginx #安装目录要存在
-  
-  acme.sh --install-cert -d exmple.domain.com \
-  --key-file       /acme.sh/keyfile/in/nginx/key.pem  \
-  --fullchain-file /acme.sh/fullchain/nginx/cert.pem \
-  --reloadcmd     "service nginx force-reload"
-  ```
-- 续签证书 https://github.com/acmesh-official/acme.sh#9-use-dns-manual-mode
-- ### warp
-- warp https://github.com/Mon-ius/Docker-Warp-Socks
-- ```shell
-  docker run --privileged --restart=always -itd \
-    --name warp_socks \
-    --cap-add NET_ADMIN \
-    --cap-add SYS_MODULE \
-    --sysctl net.ipv6.conf.all.disable_ipv6=0 \
-    --sysctl net.ipv4.conf.all.src_valid_mark=1 \
-    -v /lib/modules:/lib/modules \
-    -e TZ=Asia/Tokyo \ #对申请warp没啥影响，可忽略配置
-    -p 9091:9091 \
-  monius/docker-warp-socks
-  ```
-- 检验 `curl --proxy socks5h://127.0.0.1:9091 https://www.cloudflare.com/cdn-cgi/trace`
+- ### [[acme.sh]]
+- {{embed [[acme.sh]]}}
+- ### [[CloudFlare warp]]
+- {{embed [[CloudFlare warp]]}}
 - ### "Just runing a real linux environment."
 - alpine https://hub.docker.com/_/alpine
 - ```shell
@@ -87,7 +50,7 @@ tags:: DevOps
     -p 3001:3001 -p 3002:3002 -p 3003:3003 -p 3004:3004 \ # grpc
   teddysun/xray
   ```
-- ### nginx
+- ### [[nginx]]
 - nginx
 - ```shell
   docker run -d --name nginx \
