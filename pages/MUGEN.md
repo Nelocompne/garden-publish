@@ -17,6 +17,10 @@ date::  [[Dec 27th, 2022]]
 - # 制作工具
 - 和其他任何游戏一样，你需要有个文本编辑器、内容制作工具、图像处理工具。在 2023 年，这方面你有太多的选择，这方面我十分推荐文本编辑器 [Visual Studio Code](https://code.visualstudio.com/)，MUGEN 内容制作工具 [Fighter Factory Studio](http://fighterfactory.virtualltek.com/)（[汉化补丁](https://qxmugen.com/tools/10049)），图像处理工具 [Krita](https://apps.kde.org/zh-cn/krita/)，[GIMP](https://www.gimp.org/)。选择它们的原因是因为都很强大，并且免费。处理编码，制作脚本的语法高亮，制作色表（Sprite Sheet）……
 - 还有一些额外的推荐，录制你的电脑视频：[OBS Studio](https://obsproject.com/)，录制一个动画GIF [ScreenToGif](https://www.screentogif.com/)。
+- ## FFS
+- [[Sep 11th, 2023]] 近日我在 [VirtuallTek](https://virtualltek.com/) 官网发现他们更新了些东西，实际上这些更新可能在两个月前就完成了，比如他们展示了在去年中时候展示的 [[MUGENext]] 的介绍：
+- {{embed [[MUGENext]]}}
+- 实际上就是展示了一个可以给MUGEN用的新的引擎，兼容原版保持更新。
 - # 如何做一款自己的mugen
 - 和任何一款游戏一样，即使是mugen这样的格斗游戏，它包含已有的框架可以免去很多开发成本。但是你依然要面对大多数游戏制作中的挑战：美术、画面、动画、声音、音乐、脚本、函数逻辑甚至剧本等等……
 - 所以这注定了制作一款自己的mugen不会是简单的事情，所以第一件事就是认清，有了mugen并不会让你做一款格斗游戏轻松多少，你需要会很多东西，除非你有朋友可以为你分担一些工作。

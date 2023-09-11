@@ -3,7 +3,7 @@ date::  [[May 12th, 2023]]
 tags:: Game
 
 - ## 开始
-- 下载[[Ryujinx]]，在github里找到主页和下载地址。
+- 下载[[Ryujinx]]，在 [[Github]] 里找到主页和下载地址：[Ryujinx](https://github.com/Ryujinx/Ryujinx)
 - ### 第一次配置推荐：便携模式
 - 根据[文档](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-%26-Configuration-Guide#portable-mode)介绍推荐是在主程序目录创建子文件夹`portable`，这样应用配置都会存放在里面。
 - ### keys配置
