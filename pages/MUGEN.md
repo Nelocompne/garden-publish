@@ -1,19 +1,8 @@
 public:: true
 date::  [[Dec 27th, 2022]]
 
-- # ikemen
-- MUGEN 已经万年没更新了，而且有一些需求已经无法满足，比如64位程序的更多内存支持、键盘手柄支持、联机服务…这些都没有，玩家需要打上制作的补丁才能支持。况且因为 MUGEN 获得来源不同，上面甚至可能携带来自 “上古” 时期的电脑病毒，所以还是推荐使用 Ikemen 作为你的引擎。
-- _[Ikemen-go](https://github.com/ikemen-engine/Ikemen-GO)_ 是用 #golang 重写的引擎，开发者将它开源，你可以在Github上找到该项目代码。
-- Ikemen 支持 MUGEN 的所有功能，并且还支持新的特性，优化更好，支持 Lua 脚本，以及支持上面提到的玩家需要但是 MUGEN 没有的功能。更重要的是，因为开源，会有开发者为其不断的持续更新，同时 Golang 支持编译不同的平台，也就是说不止在 Windows 上运行 MUGEN，还可以在 Linux 或苹果设备运行。
-- 但是 Ikemen 也有一点缺点，就是编写的配置文件中不能包含多种编码，这就要求制作者尽可能的使用UTF-8码编写配置，相比起来 MUGEN 在这方面没有限制。
-- | 功能/引擎    | Ikemen-go | M.U.G.E.N |
-  |----------|-----------|-----------|
-  | 4G以上内存支持 | ✔         | ❌         |
-  | 游戏手柄支持   | ✔         | ❌         |
-  | 联机服务     | ✔         | ❌         |
-  | Lua扩展    | ✔         | ❌         |
-  |  跨平台支持 | Windows/Linux/Mac       |  仅Windows     |
-  |  配置多编码支持 | 仅UTF-8       |  不限     |
+- # [[ikemen-go]]
+- {{embed [[ikemen-go]]}}
 - # 制作工具
 - 和其他任何游戏一样，你需要有个文本编辑器、内容制作工具、图像处理工具。在 2023 年，这方面你有太多的选择，这方面我十分推荐文本编辑器 [Visual Studio Code](https://code.visualstudio.com/)，MUGEN 内容制作工具 [Fighter Factory Studio](http://fighterfactory.virtualltek.com/)（[汉化补丁](https://qxmugen.com/tools/10049)），图像处理工具 [Krita](https://apps.kde.org/zh-cn/krita/)，[GIMP](https://www.gimp.org/)。选择它们的原因是因为都很强大，并且免费。处理编码，制作脚本的语法高亮，制作色表（Sprite Sheet）……
 - 还有一些额外的推荐，录制你的电脑视频：[OBS Studio](https://obsproject.com/)，录制一个动画GIF [ScreenToGif](https://www.screentogif.com/)。
