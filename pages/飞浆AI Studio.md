@@ -15,9 +15,9 @@ date:: [[Sep 22nd, 2023]]
 - 地址 https://aistudio.baidu.com/learnmap
 - 你要是闲的话还可以完成该任务领算力卡。
 - ![image.png](../assets/image_1695353582318_0.png){:height 305, :width 734}
-- ## PaddleNLP
-- 地址介绍 https://www.paddlepaddle.org.cn/paddle/paddlenlp
-- 简单的说就是一个自然语言的脚手架，在飞浆开发中可以用到它。
+- ## Paddle框架
+- 地址介绍 https://www.paddlepaddle.org.cn/
+- 在飞浆AI Studio平台只能使用Paddle框架，它包含了一整套深度学习的工具，所以包括依赖包和环境部署都依赖它。
 - ## 运行项目
 - 这才是重头戏，也就是可以用飞浆平台的算力进行开发。实际上你也不用全部手动完成，里面有来自别的用户现成的模板直接使用（fork）。
 - 项目是通过 notebook 完成的，基于 [[python]] 的 Jupyter 工具，如果你用过类似的产品或开发栈会很熟悉这个东西。
