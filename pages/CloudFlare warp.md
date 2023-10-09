@@ -18,3 +18,7 @@ tags:: DevOps
   monius/docker-warp-socks
   ```
 - 检验 `curl --proxy socks5h://127.0.0.1:9091 https://www.cloudflare.com/cdn-cgi/trace`
+- [[Oct 8th, 2023]]
+	- 今天突然发现 https://github.com/fscarmen/warp 项目被ban了
+	- https://github.com/fscarmen/warp-sh
+		- 不过别的平台找到了这个 https://gitlab.com/fscarmen/warp
