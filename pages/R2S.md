@@ -2,14 +2,15 @@ public:: true
 date::  [[Mar 28th, 2023]], [[Aug 28th, 2023]]
 
 - ## [[openwrt]] 固件
+	- https://firmware-selector.openwrt.org 官方编译版
 	- https://github.com/soffchen/NanoPi-R2S 大杂烩，省事
-	- https://github.com/stupidloud/nanopi-openwrt  （原klever1988） _[[immortalwrt]]_ ~~挑卡~~屁用没有
-	- https://github.com/msylgj/R2S-R4S-OpenWrt _immortalwrt_ 小 ~~挑卡~~屁用没有 _sfs_
 	- https://fw.koolcenter.com/iStoreOS/r2s/ 发行版 稳定 算小 省事 _ext4_ _squashfs_
-	- https://github.com/kiddin9/OpenWrt_x86-r2s-r4s-r5s-N1 在线定制编译 能用 小 启动多试 _sfs_
-	- https://github.com/thomaswcy/R2S _[[RubikWrt]]_ 能用 小 启动多试 _sfs_ 风扇启停频繁
 	- https://github.com/QiuSimons/YAOF 这个也可以试试，~~但我没用过~~， 默认给CPU提频了，我机子体质太差启动不了，要降频才行。
 		- https://github.com/nicholas-opensource/OpenWrt-Autobuild fork版，精简的同时编译了 [[dae]] ，非常好
+	- https://github.com/stupidloud/nanopi-openwrt  （原klever1988） _[[immortalwrt]]_ ~~挑卡~~屁用没有
+	- https://github.com/msylgj/R2S-R4S-OpenWrt _immortalwrt_ 小 ~~挑卡~~屁用没有 _sfs_
+	- https://github.com/kiddin9/OpenWrt_x86-r2s-r4s-r5s-N1 在线定制编译 能用 小 启动多试 _sfs_
+	- https://github.com/thomaswcy/R2S _[[RubikWrt]]_ 能用 小 启动多试 _sfs_ 风扇启停频繁
 - ## 固件烧录安装
 - sys灯开始会一闪一闪，当它稳定或者有呼吸闪动后说明准备就绪。**插上网线一直没有识别到网络就是没用**。
 - ## 安装openclash
