@@ -32,7 +32,7 @@ tags:: DevOps
 - ### "Just runing a real linux environment."
 - alpine https://hub.docker.com/_/alpine
 - ```shell
-  docker run -d \
+  docker run -d --name unix \
     -v xrayunix:/dev/shm \
   alpine ping 127.0.0.1 # 随便找个能让容器持续运行下去的服务
   ```

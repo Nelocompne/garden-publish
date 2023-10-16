@@ -22,3 +22,14 @@ tags:: DevOps
 	- 今天突然发现 https://github.com/fscarmen/warp 项目被ban了
 	- https://github.com/fscarmen/warp-sh
 		- 不过别的平台找到了这个 https://gitlab.com/fscarmen/warp
+- [[Oct 14th, 2023]] warp更新
+	- mon-ius 版本的 warp socks 运行并不稳定，有个新项目，并且还是用 [[sing-box]] 作为客户端
+	- https://github.com/baby9/wgcf-socks-docker
+	- ```shell
+	  docker run -d \
+	  --name wgcf_socks \
+	  -p 40000:40000 \
+	  --restart=unless-stopped \
+	  zenexas/wgcf-socks:latest
+	  ```
+	- 验证 `curl -s4m8 -x socks5://127.0.0.1:40000 https://www.cloudflare.com/cdn-cgi/trace | grep warp`
