@@ -1,5 +1,5 @@
-public:: true
-date:: [[Jul 16th, 2023]] 
+public::  true
+date:: [[Jul 16th, 2023]], [[Jul 29th, 2023]] 
 tags:: DevOps
 
 - ## 什么情况下你应该继续看这篇文章？
@@ -12,6 +12,7 @@ tags:: DevOps
 - 首先软件包更新一波，然后安装docker，别自己装，直接用docker[官方的install脚本](https://github.com/docker/docker-install)。顺便你还可以装些常用的工具 `tmux neofetch htop` ……
 - 关闭系统自带的防火墙，或者开放服务端口。这个方法自己上网找。~~[参考](https://isedu.top/index.php/archives/33/)~~：
 	- `sudo iptables -P INPUT ACCEPT && sudo iptables -P FORWARD ACCEPT && sudo iptables -P OUTPUT ACCEPT && sudo iptables -F` 注意，这个方法在服务器重启后就会重置
+	- [[Jul 25th, 2023]] 之前用Vultr家主机的时候遇到过端口不通的问题，[这篇文章](https://macgeeker.com/linux/vultr-config/)的解释非常好。之前用oracle cloud的时候也是，要注意机子自己的防火墙配置。#DevOps
 - 开启BBR加速算法，这个也自己去上网搜。参考：
   ```shell
   echo net.core.default_qdisc=fq >> /etc/sysctl.conf
