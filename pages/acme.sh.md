@@ -37,3 +37,4 @@ tags:: DevOps
   --reloadcmd     "service nginx force-reload"
   ```
 - 续签证书 https://github.com/acmesh-official/acme.sh#9-use-dns-manual-mode
+	- 注意：如果是通过DNS生成的证书，续签时只需要重新以DNS方式生成一遍证书即可。
